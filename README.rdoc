@@ -1,3 +1,5 @@
+<h1>migSig Inc.</h1>
+
 This is the Repository for a migSig Blog app. 
 
 Ruby on rails Full stack solution.
