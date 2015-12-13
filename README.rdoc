@@ -1,4 +1,4 @@
-<h1>migSig Inc.</h1>
+== migSig Inc.
 
 This is the Repository for a migSig Blog app. 
 
