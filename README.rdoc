@@ -1,5 +1,7 @@
-== migSig Inc.
+== migSig Inc. 
 
 This is the Repository for a migSig Blog app. 
 
 Ruby on rails Full stack solution.
+
+Demo - https://secure-scrubland-9405.herokuapp.com/
