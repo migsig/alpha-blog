@@ -192,7 +192,7 @@ textarea,input{
             <div class="row">
                 <div class="col-md-4 col-md-push-7 phone-preview">
  <!--                    <div class="iphone-mockup"><%= image_tag 'ipad.svg'%> 
-                        <div class="screen"><%= image_tag 'IMG_2679.PNG'%></div>
+<div class="screen"><% image_tag 'screen.PNG'%></div>
                    </div>-->
                 </div>
                 <div class="col-md-12 col-md-pull-3 get-it">
@@ -207,8 +207,7 @@ textarea,input{
         <%= f.text_area :description %>
 </p>
 <p>
-    <%= f.submit %>
-   
+    <%= f.submit 'Create', :class => 'btn btn-primary btn-lg' %>
 </p>
 <% end %>
                 </div>
