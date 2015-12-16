@@ -2,8 +2,9 @@
 <html>
 <head>
   <title>AlphaBlog</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 <style>
 .navbar{
@@ -16,7 +17,7 @@
 }
 
 .hero{
-  background:url(../../assets/city_bg-76b5986a6594edada5865bd1a45e5510d4f932bbc83f0af695075a2391950c60.png) no-repeat center;
+  background:url(../../assets/city_bg-399082b9a04a398d4f663af1be34c418f497ec794c349261a98e1d76df766d94.png) no-repeat center;
   background-size:cover;
   border:none;
 }
@@ -169,7 +170,7 @@ section.testimonials{
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><%= image_tag 'logo.svg' %>  migSig Inc.</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span><i class="fa fa-navicon"></i>::before </button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
@@ -188,7 +189,7 @@ section.testimonials{
             <div class="row">
                 <div class="col-sm-6">
                     <h5>Mobile App © 2015</h5></div>
-                <div class="col-sm-6 social-icons"><a href="#"><span class="fa fa-facebook"></span></a><a href="#"><span class="fa fa-twitter"></span></a><a href="#"><span class="fa fa-instagram"></span></a></div>
+                <div class="col-sm-6 social-icons"><a href="https://facebook.com/migsiginc"><span class="fa fa-facebook"></span></a><a href="https://twitter.com/migsig"><span class="fa fa-twitter"></span></a><a href="https://instagram.com/migsig"><span class="fa fa-instagram"></span></a></div>
             </div>
         </div>
         <div></div>
