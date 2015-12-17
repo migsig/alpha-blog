@@ -163,6 +163,12 @@ section.testimonials{
     text-align:right;
   }
 }
+textarea,input{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: black;
+    padding: 10px;
 
 </style>
 </head>
@@ -170,18 +176,22 @@ section.testimonials{
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><%= image_tag 'logo.svg' %>  migSig Inc.</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span><i class="fa fa-navicon"></i>::before </button>
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span><i class="fa fa-navicon"></i> </button>
             </div>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><%= link_to "Home", root_path %></li>
+                    <li role="presentation"><%= link_to "Home", root_path %></li>
                     <li role="presentation"><%= link_to "About", about_path %></li>
                     <li role="presentation"><%= link_to "Contact", contact_path %></li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    <% flash.each do |name, msg| %>
+    <ul>
+        <li><%= msg %></li>
+    </ul>
+    <% end %>
 <%= yield %> <!--DON"T DELETE-->
     
 <footer class="site-footer">
