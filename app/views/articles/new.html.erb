@@ -8,7 +8,16 @@
                    </div>-->
                 </div>
                 <div class="col-md-12 col-md-pull-3 get-it">
-                    <h1>Create an Article</h1>
+                <h1>Create an Article</h1>
+             
+                    <ul>
+                    <% if @article.errors.any? %>
+                    <% @article.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                    
+                    <%end%>
+                    <%end%>
+                    </ul>    
 <%= form_for @article do |f| %>
 <p>
     <%= f.label :title %></br>
