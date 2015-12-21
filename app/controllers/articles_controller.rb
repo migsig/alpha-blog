@@ -13,7 +13,7 @@ class ArticlesController < ApplicationController
       else
             render 'edit'
       end
-     
+    end
     def create
       @article = Article.new(article_params)
       if @article.save
