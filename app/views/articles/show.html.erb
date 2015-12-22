@@ -10,8 +10,9 @@
                 <div class="col-md-12 col-md-pull-3 get-it">
                     <h1>Showing Article <%= @article.id %></h1>
                     <p>Title: <%= @article.title %></p>
-                    <p> Description: <%= @article.description %></p>  
-                     <button><%= link_to "Back to Articles", articles_path %></button>
+                    <p> Description: <%= @article.description %></p> 
+                    <%= link_to "Edit Article", edit_article_path, :class => "btn btn-primary" %></br>
+                <%= link_to "Back to Articles", articles_path, :class => "btn btn-default" %>
                 </div>
             </div>
         </div>
