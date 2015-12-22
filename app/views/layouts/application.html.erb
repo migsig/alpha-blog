@@ -21,18 +21,14 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li role="presentation"><%= link_to "Home", root_path %></li>
                     <li role="presentation"><%= link_to "About", about_path %></li>
+                    <li role="presentation"><%= link_to "Alpha Blog", articles_path %></li>
                     <li role="presentation"><%= link_to "Contact", contact_path %></li>
                 </ul>
             </div>
         </div>
     </nav>
           <div>
-       <% flash.each do |key, value| %>
-    <div class="alert alert-dismissable <%= flash_class(key) %> fade in">
-       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-     <h2 class="alert alert-<%= flash_class(key) %> fade in"> <%= value %></h2>
-    </div>
-  <% end %>
+              <%= render 'layouts/flash_messages' %>
        </div> 
 </header>
     
