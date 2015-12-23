@@ -17,6 +17,7 @@
                     <div class="col-md-6" style="background-color:white;">
                     <table>
     <tr>
+        <td>&nbsp;</td>
     <th style="text-align:center;">Title</th>
     <th>&nbsp;</th>
     <th style="text-align:center;">Description</th>
@@ -27,21 +28,22 @@
     <th>&nbsp;</th>
     <th>&nbsp;</th>
     </tr>
-    <% @article.each do |article| %>
+    <% @articles.each do |article| %>
 <tr>
+    <td>&nbsp;</td>
     <td><%= article.title %></td>
     <td>&nbsp;</td>
     <td><%= article.description %></td>
     <td>&nbsp;</td>
-    <td><%= link_to "EDIT", edit_article_path(article) %></td>
+    <td><%= link_to " ", edit_article_path(article), :class => 'fa fa-edit lrg'  %></td>
     <td>&nbsp;</td>
-    <td><%= link_to "Show", article_path(article) %></td>
+    <td><%= link_to " ", article_path(article), :class => 'fa fa-tv lrg'  %></td>
     <td>&nbsp;</td>
-    <td><%= link_to "DEL", article_path(article), method: :delete, data: {confirm: "Are you sure?"} %></td>
+    <td><%= link_to " ", article_path(article), method: :delete, data: {confirm: "Are you sure?"},:class => 'fa fa-trash'  %></td>
     
 </tr>
     <% end %>
-</table> 
+</table> ,
                        
                 </div>
                     
