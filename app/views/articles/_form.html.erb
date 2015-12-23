@@ -1,12 +1,11 @@
-<div class="row"><ul style="list-style:none;">
+<div class="row"><ul class="alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
                     <% if @article.errors.any? %>
-                        <h4 class="alert alert-info"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>The following errors prevented the Article from being created.</h4>
+                        <h4 class="alert alert-info">The following errors prevented the Article from being created.</h4>
                     <% @article.errors.full_messages.each do |msg| %>
-                    <li class="alert alert-danger fade in"><%= msg %><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button></li>
-                    
+                        <li><%= msg %></li>
                     <%end%>
                     <%end%>
-                    </ul>    
+                    </ul>
 </div>
                     
 <%= form_for @article do |f| %>
