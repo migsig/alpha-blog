@@ -2,6 +2,6 @@
 
 This is the Repository for a migSig Blog app. 
 
-Ruby on rails Full stack solution.
+Ruby on Rails - Full stack solution.
 
-Demo - https://secure-scrubland-9405.herokuapp.com/
+Demo - https://alpha-blog-migsig.herokuapp.com/
