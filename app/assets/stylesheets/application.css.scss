@@ -1,5 +1,4 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
+
 /* mini logo */
 .navbar-brand img {
     float: left;
@@ -353,3 +352,10 @@ textarea,input{
 }
 }
     
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
