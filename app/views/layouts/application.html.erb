@@ -1,48 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-    margin-top: 25px;
-    font-size: 21px;
-    text-align: center;
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari and Chrome */
-    -o-animation: fadein 2s; /* Opera */
-}
-@keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-moz-keyframes fadein { /* Firefox */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-webkit-keyframes fadein { /* Safari and Chrome */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
-}
-@-o-keyframes fadein { /* Opera */
-    from {
-        opacity:0;
-    }
-    to {
-        opacity: 1;
-    }
-}</style>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alpha Blog - migSig Development</title>
@@ -54,24 +12,10 @@
 </head>
 <body>
 <header>
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#"><%= image_tag 'logo.svg' %>  migSig Inc.</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span><i class="fa fa-navicon"></i> </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li role="presentation"><%= link_to "Home", root_path %></li>
-                    <li role="presentation"><%= link_to "About", about_path %></li>
-                    <li role="presentation"><%= link_to "Alpha Blog", articles_path %></li>
-                    <li role="presentation"><%= link_to "Contact", contact_path %></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-          <div>
+    
+              <%= render 'layouts/navigation' %>
               <%= render 'layouts/flash_messages' %>
-       </div> 
+      
 </header>
     
 <%= yield %> <!--DON"T DELETE-->

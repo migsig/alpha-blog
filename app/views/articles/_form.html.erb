@@ -1,13 +1,14 @@
+<% if @article.errors.any? %>
 <div class="row">
-                    <% if @article.errors.any? %>
+                    
                         <h4 class="alert alert-info">The following errors prevented the Article from being created.</h4>
                     <% @article.errors.full_messages.each do |msg| %>
                         <ul class="alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><li><%= msg %></li>
                     <%end%>
-                    <%end%>
+                   
                     </ul>
 </div>
-                    
+    <%end%>                 
 <%= form_for @article do |f| %>
 <p >
     <%= f.label :title %></br>
