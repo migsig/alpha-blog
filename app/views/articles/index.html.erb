@@ -1,21 +1,13 @@
 
     <div class="jumbotron hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-push-7 phone-preview">
-                    
- <!--                    <div class="iphone-mockup"><%= image_tag 'ipad.svg'%> 
-<div class="screen"><% image_tag 'screen.PNG'%></div>
-                   </div>-->
-                </div>
-                <div class="col-md-12 col-md-pull-3 get-it">
-                    <h1>List all Articles</h1>
+        <div class="container" style="background-color:white;">
+            
+                
+            
+                    <h1>Alpha Blog Article Index</h1>
 <p><button><%= link_to "Create New Article", new_article_path %></button></p>
-                    <div class="col-md-6">
                     
-                </div>
-                    <div class="col-md-6" style="background-color:white;">
-                    <table>
+            <table>
     <tr>
         <td>&nbsp;</td>
     <th style="text-align:center;">Title</th>
@@ -39,41 +31,9 @@
 </tr>
     <% end %>
 </table> 
-                       
+                      
                 </div>
-                    
-                </div>
-            </div>
-        </div>
     </div>
-    <section class="testimonials">
-        <h2 class="text-center">Did we mention? People Love It!</h2>
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>Famous tech website</footer>
-        </blockquote>
-    </section>
-    <section class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Fantastic Features</h2>
-                    <p>Morbi non mauris massa. Duis elit mauris, malesuada nec suscipit ac, bibendum sed augue. Maecenas condimentum magna gravida, laoreet nunc sed, euismod sem. </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="row icon-features">
-                        <div class="col-xs-4 icon-feature"><span class="glyphicon glyphicon-cloud"></span>
-                            <p>Cloud-ready </p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><span class="glyphicon glyphicon-piggy-bank"></span>
-                            <p>Saves You Money</p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><span class="glyphicon glyphicon-fire"></span>
-                            <p>Fire Proof</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<%= render 'layouts/testimonials' %>  
+<%= render 'layouts/features' %>
  

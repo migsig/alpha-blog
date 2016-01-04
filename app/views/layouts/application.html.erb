@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alpha Blog - migSig Development</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <%= csrf_meta_tags %>
 
 </head>
@@ -14,17 +14,18 @@
 <header>
     
               <%= render 'layouts/navigation' %>
-              <%= render 'layouts/flash_messages' %>
-      
+              <div class="container"><%= render 'layouts/flash_messages' %>
+      </div>
 </header>
     
+   
 <%= yield %> <!--DON"T DELETE-->
-    
+   
 <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    <h5>Mobile App © 2015</h5></div>
+                    <h5>migSig Inc. © 2015</h5></div>
                 <div class="col-sm-6 social-icons"><a href="https://facebook.com/migsiginc"><span class="fa fa-facebook"></span></a><a href="https://twitter.com/migsig"><span class="fa fa-twitter"></span></a><a href="https://instagram.com/migsig"><span class="fa fa-instagram"></span></a></div>
             </div>
         </div>

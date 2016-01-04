@@ -1,50 +1,35 @@
 
     <div class="jumbotron hero">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-push-7 phone-preview">
- <!--                    <div class="iphone-mockup"><%= image_tag 'ipad.svg'%> 
-<div class="screen"><% image_tag 'screen.PNG'%></div>
-                   </div>-->
-                </div>
-                <div class="col-md-12 col-md-pull-3 get-it">
-                    <h1>Showing Article <%= @article.id %></h1>
-                    <p>Title: <%= @article.title %></p>
-                    <p> Description: <%= @article.description %></p> 
-                    <%= link_to "Edit Article", edit_article_path, :class => "btn btn-primary" %></br>
+<div class="container post">
+        <div class="row">
+            <div class="col-md-6 post-title">
+                Title:<h1> <%= @article.title %></h1>
+                     <%= link_to "Edit Article", edit_article_path, :class => "btn btn-primary" %>&nbsp;&nbsp;
                 <%= link_to "Back to Articles", articles_path, :class => "btn btn-default" %>
-                </div>
+                </br>
+            </br>
+                <p class="author"><strong>author: user</strong> <span class="text-muted">Date Stamp HERE</span></p>
+            </div>
+            <div class="col-md-6 col-md-offset-0 post-body"style="color:white;text-shadow:1px 1px #000;">
+                
+                <h4>Description:
+                </h4><p>   <%= @article.description %>
+                    in faucibus. Praesent nibh ex, hendrerit at tellus sed, laoreet suscipit leo. </p>
+                <p>Curabitur cursus ac quam sit amet mattis. Donec lacinia massa id libero tincidunt, sed ultricies magna eleifend. Integer porta consectetur ipsum sed porttitor. Praesent sed convallis nisi. Mauris eget commodo sem. Sed auctor commodo quam
+                    eu semper. </p>
+                <p>Sed mollis, urna eu tempus facilisis, diam tellus aliquam tortor, et vestibulum ante quam non justo. Nullam luctus rutrum mattis. Maecenas in pharetra mi, vel mollis odio. </p>
+                <figure><img class="img-thumbnail" src="assets/img/camera_illustration.jpg">
+                    <figcaption>Praesent sed convallis nisi </figcaption>
+                </figure>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem quam, scelerisque vitae sem non, ornare condimentum leo. Vivamus eros tortor, tincidunt et viverra ac, gravida eu augue. Interdum et malesuada fames ac ante ipsum primis
+                    in faucibus. Praesent nibh ex, hendrerit at tellus sed, laoreet suscipit leo. </p>
             </div>
         </div>
     </div>
-    <section class="testimonials">
-        <h2 class="text-center">Did we mention? People Love It!</h2>
-        <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer>Famous tech website</footer>
-        </blockquote>
-    </section>
-    <section class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Fantastic Features</h2>
-                    <p>Morbi non mauris massa. Duis elit mauris, malesuada nec suscipit ac, bibendum sed augue. Maecenas condimentum magna gravida, laoreet nunc sed, euismod sem. </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="row icon-features">
-                        <div class="col-xs-4 icon-feature"><span class="glyphicon glyphicon-cloud"></span>
-                            <p>Cloud-ready </p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><span class="glyphicon glyphicon-piggy-bank"></span>
-                            <p>Saves You Money</p>
-                        </div>
-                        <div class="col-xs-4 icon-feature"><span class="glyphicon glyphicon-fire"></span>
-                            <p>Fire Proof</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
+</div>
+
+
+<%= render 'layouts/testimonials2' %>  
+<%= render 'layouts/features' %>
  

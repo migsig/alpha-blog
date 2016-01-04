@@ -1,3 +1,5 @@
+table{width:100%;margin-bottom: 20px;}
+
 html{ background: #588DDE; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(#588DDE, white); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#588DDE, white); /* For Opera 11.1 to 12.0 */
@@ -55,6 +57,7 @@ html{ background: #588DDE; /* For browsers that do not support gradients */
 
 @import "font-awesome-sprockets";
 @import "font-awesome";
+
 .navbar{
   margin-bottom:0;
   border:none;
@@ -77,7 +80,7 @@ html{ background: #588DDE; /* For browsers that do not support gradients */
 }
 
 .hero{
-  background:url(../../assets/city_bg-399082b9a04a398d4f663af1be34c418f497ec794c349261a98e1d76df766d94.png) no-repeat center;
+  background:url(../../assets/city_bg.png) no-repeat center;
   background-size:cover;
   border:none;
 }
@@ -412,3 +415,171 @@ textarea,input{
 }
 }
   
+.page-header{
+  text-align:center;
+}
+
+.avatar{
+  margin:0 auto;
+}
+
+@media (max-width:767px) {
+  .avatar{
+    padding:20px;
+  }
+}
+
+.social-btns-holder{
+  text-align:center;
+}
+
+.social-btns-holder li{
+  padding:0;
+}
+
+.btn-social{
+  color:white;
+  opacity:0.9;
+  font-size:10px;
+  padding:8px 10px;
+}
+
+@media (max-width:767px) {
+  .btn-social{
+    width:80px;
+  }
+}
+
+.btn-social:hover{
+  color:white;
+  opacity:1;
+}
+
+.btn-facebook{
+  background:#3b5998;
+}
+
+.btn-twitter{
+  background:#00aced;
+}
+
+.btn-linkedin{
+  background:#0e76a8;
+}
+
+.btn-github{
+  background:#000000;
+}
+
+.btn-google{
+  background:#c32f10;
+}
+
+.btn-stackoverflow{
+  background:#D38B28;
+}
+
+.resume-heading .social-btns{
+  margin-top:15px;
+}
+
+.resume .list-group-item:first-child, .resume .list-group-item:last-child{
+  border-radius:0;
+}
+
+.bs-callout{
+  border-color:#eee;
+  border-image:none;
+  border-radius:3px;
+  border-style:solid;
+  border-width:1px 1px 1px 5px;
+  margin-bottom:5px;
+  padding:20px;
+  border-left-color:#d9534f;
+}
+
+.bs-callout:last-child{
+  margin-bottom:0;
+}
+
+.bs-callout h4{
+  margin-bottom:10px;
+  margin-top:0;
+  color:#d9534f;
+}
+
+.panel-body{
+  padding:0;
+}
+
+.inactive-link{
+  pointer-events:none;
+  cursor:default;
+}
+
+.progress-bar-container{
+  position:relative;
+}
+
+.progress-bar{
+  text-align:left;
+  white-space:nowrap;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  cursor:pointer;
+}
+
+span.progress-type{
+  position:absolute;
+  top:0px;
+  left:10px;
+  font-size:12px;
+  line-height:20px;
+  color:#fff;
+}
+
+.progress-meter{
+  min-height:15px;
+  border-bottom:2px solid rgb(160, 160, 160);
+  margin-bottom:15px;
+}
+
+.progress-meter > .meter{
+  position:relative;
+  float:left;
+  min-height:15px;
+  border-width:0px;
+  border-style:solid;
+  border-color:rgb(160, 160, 160);
+  width:25%;
+}
+
+.progress-meter > .meter-left{
+  border-left-width:2px;
+}
+
+.progress-meter > .meter-right{
+  border-right-width:2px;
+  float:right;
+}
+
+.progress-meter > .meter-right:last-child{
+  border-left-width:2px;
+}
+
+.progress-meter > .meter > .meter-text{
+  position:absolute;
+  display:inline-block;
+  bottom:-20px;
+  width:100%;
+  font-weight:700;
+  font-size:0.85em;
+  color:rgb(160, 160, 160);
+  text-align:left;
+}
+
+.progress-meter > .meter.meter-right > .meter-text{
+  text-align:right;
+}
+
