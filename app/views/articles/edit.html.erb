@@ -1,22 +1,15 @@
-
     <div class="jumbotron hero">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-push-7 phone-preview">
- <!--                    <div class="iphone-mockup"><%= image_tag 'ipad.svg'%> 
-<div class="screen"><% image_tag 'screen.PNG'%></div>
-                   </div>-->
-                </div>
-                <div class="col-md-12 col-md-pull-3 get-it">
-                    <h1>Edit Article <%= @article.id%></h1>
+            
+                <div class="col-xs-12 get-it">
+                <h1 align="center">Edit Article <%= @article.id%></h1>
              
                     <%= render 'form' %>
-
-                <button class="btn"><%= link_to "Back to Articles", articles_path %></button></div>
-            </div>
+                    
+                 </div>
+            
         </div>
     </div>
- 
+    
 <%= render 'layouts/testimonials' %>  
 <%= render 'layouts/features' %>
- 
