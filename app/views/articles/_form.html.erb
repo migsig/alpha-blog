@@ -1,14 +1,4 @@
-<% if @article.errors.any? %>
-<div class="row">
-                    
-                        <h4 class="alert alert-info">The following errors prevented the Article from being created.</h4>
-                    <% @article.errors.full_messages.each do |msg| %>
-                        <ul class="alert alert-danger fade in"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><li><%= msg %></li>
-                    <%end%>
-                   
-                    </ul>
-</div>
-<%end%>       
+<%= render 'shared/errors', obj: @article %>
 <div class='row'>
 <div class='col-xs-12'>
 <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %>
@@ -29,7 +19,7 @@
 </div>
 </div>
 <div class="form-group">
-<div class="col-sm-10">
+<div class="col-xs-4 col-xs-offset-4">
 <%= f.submit class: 'btn btn-primary btn-lg' %>
 </div>
 </div>
