@@ -80,7 +80,7 @@ html{ background: #588DDE; /* For browsers that do not support gradients */
 }
 
 .hero{
-  background:url(../../assets/city_bg.png) no-repeat center;
+  background-image: asset-url('city_bg.png');
   background-size:cover;
   border:none;
 }
@@ -119,19 +119,19 @@ html{ background: #588DDE; /* For browsers that do not support gradients */
 
 div.iphone-mockup{
   position:relative;
-  max-width:250px;
+  max-width:300px;
   margin:20px;
   display:inline-block;
 }
 
 .iphone-mockup img.device{
-  width:100%;
+  width:113%;
   height:auto;
 }
 
 .iphone-mockup .screen{
   position:absolute;
-  width:106%;
+  width:100%;
   height:77%;
   top:12%;
   border-radius:2px;
