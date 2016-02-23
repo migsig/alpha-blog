@@ -22,6 +22,6 @@ test:
 
 production:
   adapter: postgresql
-  database: d7lr0l8c8uld29
+  database: heroku-postgres-a0630136 :: gold
   pool: 5
   timeout: 5000
