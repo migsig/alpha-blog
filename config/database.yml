@@ -21,5 +21,5 @@ test:
   database: db/test.sqlite3
 
 production:
-   url: <%= ENV['DATABASE_URL'] %>
+   url: <%= ENV['postgres://cjarlvtjyknblp:o_zavwXwNF-0yCYSCVG_ZHZpO4@ec2-107-20-153-141.compute-1.amazonaws.com:5432/d7lr0l8c8uld29'] %>
    adapter: postgresql
